@@ -35,7 +35,7 @@
         }
 
         #main {
-            padding: 5vh 10vw 5vh 10vw;
+            padding: 5vh 15vw;
             text-align: left;
         }
 
@@ -46,6 +46,25 @@
         #navLink {
             margin-left: 16px;
             margin-right: 0;
+        }
+
+        #footer {
+            background-color: grey;
+            padding: 35px 15vw;
+            display: flex;
+        }
+
+        .footerContainers {
+            width: 50%;
+        }
+
+        #footerImage {
+            width: 12.5vw;
+        }
+
+        #footerLink {
+            color: white;
+            text-decoration: none;
         }
 
         @media (max-width:575px) {
@@ -78,6 +97,20 @@
             #navLink {
                 font-size: 1em;
             }
+
+            #footer {
+                background-color: grey;
+                padding: 3.5vh 7.5vw;
+                display: flex;
+            }
+
+            .footerContainers {
+                width: 50%;
+            }
+
+            #footerImage {
+                width: 25vw;
+            }
         }
     </style>
 </head>
@@ -92,8 +125,6 @@
                 <li class="nav-item">
                     <a id="navLink" href="/" class="navbar-brand">首頁</a>
                     <a id="navLink" href="/contact" class="navbar-brand">聯絡我</a>
-                    <a id="navLink" href="https://open.spotify.com/playlist/3XkTEanVWuxWYIZD41zUQX?si=d29950971c444b69"
-                        class="navbar-brand">Bingus Beats</a>
                 </li>
             </ul>
         </div>
@@ -110,7 +141,23 @@
         <h4 id="text">如果你想談談麥當娜和她的音樂:</h4>
         <p id="text">請立即與我聯繫!</p>
     </div>
-
+    <div id="footer">
+        <div class="footerContainers">
+            <div id="footerImage">
+                <img src="assets/outline.svg" width="100%">
+            </div>
+        </div>
+        <div class="footerContainers" style="text-align: right;">
+            <ul style="list-style-type: none; color: white;">
+                <li><a id="footerLink" href="/">首頁</a></li>
+                <li><a id="footerLink" href="/contact">聯絡我</a></li>
+                <li><a id="footerLink"
+                        href="https://open.spotify.com/playlist/3XkTEanVWuxWYIZD41zUQX?si=d29950971c444b69">Bingus
+                        Beats</a></li>
+            </ul>
+            <p style="color: white">© 2022 eoisho</p>
+        </div>
+    </div>
 </body>
 
 </html>
