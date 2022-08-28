@@ -3,13 +3,19 @@
 <head>
     <title>eoisho!</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <meta name="robots" content="nofollow" />
-    <meta name="robots" content="noarchive" />
-
-    <link rel="shortcut icon" type="image/x-icon" href="assets/icon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/touch-icon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="ㅤ">
+    <meta property="og:site_name" content="eoisho!">
+    <meta property="og:title" content="eoisho!">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="ㅤ">
+    <meta property="og:image" content="https://eoisho.carrd.co/assets/images/card.jpg?v=0df8e64d">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="800">
+    <meta property="og:url" content="https://eoisho.carrd.co">
+    <meta property="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://eoisho.carrd.co">
     <link href="https://fonts.googleapis.com/css?display=swap&amp;family=Baloo:400,400italic" rel="stylesheet"
         type="text/css">
     <style>
@@ -248,8 +254,7 @@
             align-items: center;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            min-height: var(--viewport-height);
+            justify-content: center;
             overflow: hidden;
             position: relative;
             z-index: 2;
@@ -296,7 +301,7 @@
         }
 
         #main>.inner> :last-child {
-            margin-bottom: 0.5rem !important;
+            margin-bottom: 0rem !important;
         }
 
         #main>.inner>.full {
@@ -320,6 +325,7 @@
         #main>.inner>.full.screen {
             border-radius: 0 !important;
             max-width: 100vw;
+            height: 100vh;
             position: relative;
             width: 100vw;
             left: 50%;
@@ -495,7 +501,6 @@
 
         #container05.columns>.wrapper>.inner>.full {
             align-self: stretch;
-            min-height: 35rem;
         }
 
         #container05.columns>.wrapper>.inner>.full:first-child {
@@ -530,113 +535,6 @@
             width: calc(50% + (var(--gutters) / 2));
             --alignment: center;
             --flex-alignment: center;
-        }
-
-        .icons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: var(--flex-alignment);
-            letter-spacing: 0;
-            padding: 0;
-        }
-
-        .icons li {
-            position: relative;
-            z-index: 1;
-        }
-
-        .icons li a {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .icons li a svg {
-            display: block;
-            position: relative;
-        }
-
-        .icons li a+svg {
-            display: block;
-            height: 100%;
-            left: 0;
-            pointer-events: none;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: -1;
-        }
-
-        .icons li a .label {
-            display: none;
-        }
-
-        #icons02 {
-            justify-content: center;
-            font-size: 2.25em;
-            gap: 1.5rem;
-        }
-
-        #icons02:not(:first-child) {
-            margin-top: 0rem !important;
-        }
-
-        #icons02:not(:last-child) {
-            margin-bottom: 0rem !important;
-        }
-
-        #icons02 li a {
-            height: 1em;
-            width: 1em;
-            transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-        }
-
-        #icons02 li a svg {
-            height: 100%;
-            width: 100%;
-            transition: fill 0.25s ease;
-        }
-
-        #icons02 a svg {
-            fill: #FFFFFF;
-        }
-
-        #icons02 li a+svg {
-            transition: fill 0.25s ease, stroke 0.25s ease;
-        }
-
-        #icons01 {
-            justify-content: center;
-            font-size: 2.25em;
-            gap: 1.5rem;
-        }
-
-        #icons01:not(:first-child) {
-            margin-top: 0rem !important;
-        }
-
-        #icons01:not(:last-child) {
-            margin-bottom: 0rem !important;
-        }
-
-        #icons01 li a {
-            height: 1em;
-            width: 1em;
-            transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-        }
-
-        #icons01 li a svg {
-            height: 100%;
-            width: 100%;
-            transition: fill 0.25s ease;
-        }
-
-        #icons01 a svg {
-            fill: #FFFFFF;
-        }
-
-        #icons01 li a+svg {
-            transition: fill 0.25s ease, stroke 0.25s ease;
         }
 
         .image {
@@ -747,12 +645,84 @@
             margin-top: 1.125rem;
         }
 
-        #greyContainer {
+        .icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: var(--flex-alignment);
+            letter-spacing: 0;
+            padding: 0;
+        }
+
+        .icons li {
+            position: relative;
+            z-index: 1;
+        }
+
+        .icons li a {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .icons li a svg {
+            display: block;
+            position: relative;
+        }
+
+        .icons li a+svg {
+            display: block;
+            height: 100%;
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .icons li a .label {
+            display: none;
+        }
+
+        #icons01 {
+            justify-content: center;
+            font-size: 2.25em;
+            gap: 1.5rem;
+        }
+
+        #icons01:not(:first-child) {
+            margin-top: 0rem !important;
+        }
+
+        #icons01:not(:last-child) {
+            margin-bottom: 0rem !important;
+        }
+
+        #icons01 li a {
+            height: 1em;
+            width: 1em;
+            transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+        }
+
+        #icons01 li a svg {
+            height: 100%;
+            width: 100%;
+            transition: fill 0.25s ease;
+        }
+
+        #icons01 a svg {
+            fill: #FFFFFF;
+        }
+
+        #icons01 li a+svg {
+            transition: fill 0.25s ease, stroke 0.25s ease;
+        }
+
+        #welcome {
             --alignment: center;
             --flex-alignment: center;
             display: flex;
             width: 100%;
-            min-height: 100vh;
             align-items: center;
             justify-content: center;
             background-color: grey;
@@ -794,7 +764,7 @@
             #container05 {
                 --alignment: center;
                 --flex-alignment: center;
-                min-height: 30rem;
+                min-height: 20rem;
             }
 
             #container05:not(:first-child) {
@@ -812,10 +782,6 @@
                 --spacing: 0rem;
             }
 
-            #container05.columns>.wrapper>.inner>.full {
-                min-height: 30rem;
-            }
-
             #container05>.wrapper>.inner> :nth-child(1) {
                 --alignment: center;
                 --flex-alignment: center;
@@ -824,32 +790,6 @@
             #container05>.wrapper>.inner> :nth-child(2) {
                 --alignment: center;
                 --flex-alignment: center;
-            }
-
-            #icons02 {
-                font-size: 1.875em;
-                gap: 0.875rem;
-            }
-
-            #icons02:not(:first-child) {
-                margin-top: 0rem !important;
-            }
-
-            #icons02:not(:last-child) {
-                margin-bottom: 0rem !important;
-            }
-
-            #icons01 {
-                font-size: 1.875em;
-                gap: 0.875rem;
-            }
-
-            #icons01:not(:first-child) {
-                margin-top: 0rem !important;
-            }
-
-            #icons01:not(:last-child) {
-                margin-bottom: 0rem !important;
             }
 
             #image01 .frame {
@@ -869,6 +809,19 @@
                 width: 100%;
                 font-size: 3.625em;
                 line-height: 0.875;
+            }
+
+            #icons01 {
+                font-size: 1.875em;
+                gap: 0.875rem;
+            }
+
+            #icons01:not(:first-child) {
+                margin-top: 0rem !important;
+            }
+
+            #icons01:not(:last-child) {
+                margin-bottom: 0rem !important;
             }
         }
 
@@ -897,36 +850,24 @@
             }
 
             #container05 {
-                min-height: 22.5rem;
-            }
-
-            #container05.columns>.wrapper>.inner>.full {
-                min-height: 22.5rem;
-            }
-
-            #icons02 {
-                gap: 0.65625rem;
-            }
-
-            #icons01 {
-                gap: 0.65625rem;
+                min-height: 15rem;
             }
 
             #text03 {
                 font-size: 3.625em;
             }
+
+            #icons01 {
+                gap: 0.65625rem;
+            }
         }
     </style>
+    <style></style>
     <style></style>
 </head>
 
 <body><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 40 40" display="none" width="0" height="0">
-        <symbol id="icon-972" viewBox="0 0 40 40">
-            <path
-                d="M18.5,5.6H21c0.7,0,1.3,0.2,1.8,0.6c0.5,0.4,0.7,1,0.7,1.7v13.8l5.8-5.8c0.5-0.5,1.1-0.7,1.8-0.7c0.7,0,1.3,0.2,1.8,0.7 l1.5,1.5c0.5,0.5,0.7,1.1,0.7,1.8c0,0.7-0.2,1.3-0.7,1.8L21.6,33.7c-0.5,0.5-1.1,0.7-1.8,0.7c-0.7,0-1.3-0.2-1.8-0.7L5.2,21 c-0.5-0.5-0.7-1.1-0.7-1.8s0.2-1.3,0.7-1.8l1.5-1.5c0.5-0.5,1.1-0.7,1.8-0.7c0.7,0,1.3,0.2,1.8,0.7l5.8,5.8V7.9 c0-0.7,0.2-1.2,0.7-1.7C17.3,5.8,17.8,5.6,18.5,5.6z">
-            </path>
-        </symbol>
         <symbol id="icon-910" viewBox="0 0 40 40">
             <path
                 d="M20,7c4.2,0,4.7,0,6.3,0.1c1.5,0.1,2.3,0.3,3,0.5C30,8,30.5,8.3,31.1,8.9c0.5,0.5,0.9,1.1,1.2,1.8c0.2,0.5,0.5,1.4,0.5,3 C33,15.3,33,15.8,33,20s0,4.7-0.1,6.3c-0.1,1.5-0.3,2.3-0.5,3c-0.3,0.7-0.6,1.2-1.2,1.8c-0.5,0.5-1.1,0.9-1.8,1.2 c-0.5,0.2-1.4,0.5-3,0.5C24.7,33,24.2,33,20,33s-4.7,0-6.3-0.1c-1.5-0.1-2.3-0.3-3-0.5C10,32,9.5,31.7,8.9,31.1 C8.4,30.6,8,30,7.7,29.3c-0.2-0.5-0.5-1.4-0.5-3C7,24.7,7,24.2,7,20s0-4.7,0.1-6.3c0.1-1.5,0.3-2.3,0.5-3C8,10,8.3,9.5,8.9,8.9 C9.4,8.4,10,8,10.7,7.7c0.5-0.2,1.4-0.5,3-0.5C15.3,7.1,15.8,7,20,7z M20,4.3c-4.3,0-4.8,0-6.5,0.1c-1.6,0-2.8,0.3-3.8,0.7 C8.7,5.5,7.8,6,6.9,6.9C6,7.8,5.5,8.7,5.1,9.7c-0.4,1-0.6,2.1-0.7,3.8c-0.1,1.7-0.1,2.2-0.1,6.5s0,4.8,0.1,6.5 c0,1.6,0.3,2.8,0.7,3.8c0.4,1,0.9,1.9,1.8,2.8c0.9,0.9,1.7,1.4,2.8,1.8c1,0.4,2.1,0.6,3.8,0.7c1.6,0.1,2.2,0.1,6.5,0.1 s4.8,0,6.5-0.1c1.6-0.1,2.9-0.3,3.8-0.7c1-0.4,1.9-0.9,2.8-1.8c0.9-0.9,1.4-1.7,1.8-2.8c0.4-1,0.6-2.1,0.7-3.8 c0.1-1.6,0.1-2.2,0.1-6.5s0-4.8-0.1-6.5c-0.1-1.6-0.3-2.9-0.7-3.8c-0.4-1-0.9-1.9-1.8-2.8c-0.9-0.9-1.7-1.4-2.8-1.8 c-1-0.4-2.1-0.6-3.8-0.7C24.8,4.3,24.3,4.3,20,4.3L20,4.3L20,4.3z">
@@ -951,7 +892,7 @@
     <div id="wrapper">
         <div id="main">
             <div class="inner">
-                <div id="container05" class="container columns full screen" style="height:90vh;">
+                <div id="container05" class="container columns full screen">
                     <div class="wrapper">
                         <div class="inner">
                             <div>
@@ -973,29 +914,365 @@
                                 </ul>
                             </div>
                         </div>
+                        <div style="padding-top:1em;">
+                            <a href="#welcome" onclick="smoothScroll(document.getElementById('welcome'))">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="37.5" fill="white"
+                                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div style="height:0vh; margin-bottom: 10vh;">
-                    <a class="n01" href="#welcome"><svg xmlns="http://www.w3.org/2000/svg" width="25" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                      </svg></a>
+                <div id="welcome" class="container columns full screen">
+                    <ul
+                        style="list-style-type: none; color: white; line-height: 3.5rem; font-size: 1.5em; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <li><a href="/contact">聯絡我</a></li>
+                        <li><a href="/meaning-of-eoisho">eoisho 的意思</a></li>
+                        <li><a
+                                href="https://open.spotify.com/playlist/3XkTEanVWuxWYIZD41zUQX?si=d29950971c444b69">我的播放列表</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="greyContainer" class="container columns full screen">
-                    <div id="welcome" style="padding: 10vw;">
-                        <ul
-                            style="list-style-type: none; color: white; line-height: 3.5rem; font-size: 1.5em; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <li><a href="/contact">聯絡我</a></li>
-                            <li><a href="/meaning-of-eoisho">eoisho 的意思</a></li>
-                            <li><a
-                                    href="https://open.spotify.com/playlist/3XkTEanVWuxWYIZD41zUQX?si=d29950971c444b69">我的播放列表</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
-    <script>(function () { var on = addEventListener, $ = function (q) { return document.querySelector(q) }, $$ = function (q) { return document.querySelectorAll(q) }, $body = document.body, $inner = $('.inner'), client = (function () { var o = { browser: 'other', browserVersion: 0, os: 'other', osVersion: 0, mobile: false, canUse: null, flags: { lsdUnits: false, }, }, ua = navigator.userAgent, a, i; a = [['firefox', /Firefox\/([0-9\.]+)/], ['edge', /Edge\/([0-9\.]+)/], ['safari', /Version\/([0-9\.]+).+Safari/], ['chrome', /Chrome\/([0-9\.]+)/], ['chrome', /CriOS\/([0-9\.]+)/], ['ie', /Trident\/.+rv:([0-9]+)/]]; for (i = 0; i < a.length; i++) { if (ua.match(a[i][1])) { o.browser = a[i][0]; o.browserVersion = parseFloat(RegExp.$1); break; } } a = [['ios', /([0-9_]+) like Mac OS X/, function (v) { return v.replace('_', '.').replace('_', ''); }], ['ios', /CPU like Mac OS X/, function (v) { return 0 }], ['ios', /iPad; CPU/, function (v) { return 0 }], ['android', /Android ([0-9\.]+)/, null], ['mac', /Macintosh.+Mac OS X ([0-9_]+)/, function (v) { return v.replace('_', '.').replace('_', ''); }], ['windows', /Windows NT ([0-9\.]+)/, null], ['undefined', /Undefined/, null],]; for (i = 0; i < a.length; i++) { if (ua.match(a[i][1])) { o.os = a[i][0]; o.osVersion = parseFloat(a[i][2] ? (a[i][2])(RegExp.$1) : RegExp.$1); break; } } if (o.os == 'mac' && ('ontouchstart' in window) && ((screen.width == 1024 && screen.height == 1366) || (screen.width == 834 && screen.height == 1112) || (screen.width == 810 && screen.height == 1080) || (screen.width == 768 && screen.height == 1024))) o.os = 'ios'; o.mobile = (o.os == 'android' || o.os == 'ios'); var _canUse = document.createElement('div'); o.canUse = function (property, value) { var style; style = _canUse.style; if (!(property in style)) return false; if (typeof value !== 'undefined') { style[property] = value; if (style[property] == '') return false; } return true; }; o.flags.lsdUnits = o.canUse('width', '100dvw'); return o; }()), trigger = function (t) { dispatchEvent(new Event(t)); }, cssRules = function (selectorText) { var ss = document.styleSheets, a = [], f = function (s) { var r = s.cssRules, i; for (i = 0; i < r.length; i++) { if (r[i] instanceof CSSMediaRule && matchMedia(r[i].conditionText).matches) (f)(r[i]); else if (r[i] instanceof CSSStyleRule && r[i].selectorText == selectorText) a.push(r[i]); } }, x, i; for (i = 0; i < ss.length; i++)f(ss[i]); return a; }, thisHash = function () { var h = location.hash ? location.hash.substring(1) : null, a; if (!h) return null; if (h.match(/\?/)) { a = h.split('?'); h = a[0]; history.replaceState(undefined, undefined, '#' + h); window.location.search = a[1]; } if (h.length > 0 && !h.match(/^[a-zA-Z]/)) h = 'x' + h; if (typeof h == 'string') h = h.toLowerCase(); return h; }, scrollToElement = function (e, style, duration) { var y, cy, dy, start, easing, offset, f; if (!e) y = 0; else { offset = (e.dataset.scrollOffset ? parseInt(e.dataset.scrollOffset) : 0) * parseFloat(getComputedStyle(document.documentElement).fontSize); switch (e.dataset.scrollBehavior ? e.dataset.scrollBehavior : 'default') { case 'default': default: y = e.offsetTop + offset; break; case 'center': if (e.offsetHeight < window.innerHeight) y = e.offsetTop - ((window.innerHeight - e.offsetHeight) / 2) + offset; else y = e.offsetTop - offset; break; case 'previous': if (e.previousElementSibling) y = e.previousElementSibling.offsetTop + e.previousElementSibling.offsetHeight + offset; else y = e.offsetTop + offset; break; } } if (!style) style = 'smooth'; if (!duration) duration = 750; if (style == 'instant') { window.scrollTo(0, y); return; } start = Date.now(); cy = window.scrollY; dy = y - cy; switch (style) { case 'linear': easing = function (t) { return t }; break; case 'smooth': easing = function (t) { return t < .5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1 }; break; }f = function () { var t = Date.now() - start; if (t >= duration) window.scroll(0, y); else { window.scroll(0, cy + (dy * easing(t / duration))); requestAnimationFrame(f); } }; f(); }, scrollToTop = function () { scrollToElement(null); }, loadElements = function (parent) { var a, e, x, i; a = parent.querySelectorAll('iframe[data-src]:not([data-src=""])'); for (i = 0; i < a.length; i++) { a[i].src = a[i].dataset.src; a[i].dataset.src = ""; } a = parent.querySelectorAll('video[autoplay]'); for (i = 0; i < a.length; i++) { if (a[i].paused) a[i].play(); } e = parent.querySelector('[data-autofocus="1"]'); x = e ? e.tagName : null; switch (x) { case 'FORM': e = e.querySelector('.field input, .field select, .field textarea'); if (e) e.focus(); break; default: break; } }, unloadElements = function (parent) { var a, e, x, i; a = parent.querySelectorAll('iframe[data-src=""]'); for (i = 0; i < a.length; i++) { if (a[i].dataset.srcUnload === '0') continue; a[i].dataset.src = a[i].src; a[i].src = ''; } a = parent.querySelectorAll('video'); for (i = 0; i < a.length; i++) { if (!a[i].paused) a[i].pause(); } e = $(':focus'); if (e) e.blur(); }; window._scrollToTop = scrollToTop; var thisURL = function () { return window.location.href.replace(window.location.search, '').replace(/#$/, ''); }; var getVar = function (name) { var a = window.location.search.substring(1).split('&'), b, k; for (k in a) { b = a[k].split('='); if (b[0] == name) return b[1]; } return null; }; var errors = { handle: function (handler) { window.onerror = function (message, url, line, column, error) { (handler)(error.message); return true; }; }, unhandle: function () { window.onerror = null; } }; loadElements(document.body); var style, sheet, rule; style = document.createElement('style'); style.appendChild(document.createTextNode('')); document.head.appendChild(style); sheet = style.sheet; if (client.mobile) { (function () { if (client.flags.lsdUnits) { document.documentElement.style.setProperty('--viewport-height', '100dvh'); document.documentElement.style.setProperty('--background-height', '100lvh'); } else { var f = function () { document.documentElement.style.setProperty('--viewport-height', window.innerHeight + 'px'); document.documentElement.style.setProperty('--background-height', (window.innerHeight + 250) + 'px'); }; on('load', f); on('resize', f); on('orientationchange', function () { setTimeout(function () { (f)(); }, 100); }); } })(); } if (client.os == 'android') { (function () { sheet.insertRule('body::after { }', 0); rule = sheet.cssRules[0]; var f = function () { rule.style.cssText = 'height: ' + (Math.max(screen.width, screen.height)) + 'px'; }; on('load', f); on('orientationchange', f); on('touchmove', f); })(); $body.classList.add('is-touch'); } else if (client.os == 'ios') { if (client.osVersion <= 11) (function () { sheet.insertRule('body::after { }', 0); rule = sheet.cssRules[0]; rule.style.cssText = '-webkit-transform: scale(1.0)'; })(); if (client.osVersion <= 11) (function () { sheet.insertRule('body.ios-focus-fix::before { }', 0); rule = sheet.cssRules[0]; rule.style.cssText = 'height: calc(100% + 60px)'; on('focus', function (event) { $body.classList.add('ios-focus-fix'); }, true); on('blur', function (event) { $body.classList.remove('ios-focus-fix'); }, true); })(); $body.classList.add('is-touch'); } })();</script>
+    <script>
+        (function () {
+            var on = addEventListener,
+                $ = function (q) {
+                    return document.querySelector(q);
+                },
+                $$ = function (q) {
+                    return document.querySelectorAll(q);
+                },
+                $body = document.body,
+                $inner = $(".inner"),
+                client = (function () {
+                    var o = { browser: "other", browserVersion: 0, os: "other", osVersion: 0, mobile: false, canUse: null, flags: { lsdUnits: false } },
+                        ua = navigator.userAgent,
+                        a,
+                        i;
+                    a = [
+                        ["firefox", /Firefox\/([0-9\.]+)/],
+                        ["edge", /Edge\/([0-9\.]+)/],
+                        ["safari", /Version\/([0-9\.]+).+Safari/],
+                        ["chrome", /Chrome\/([0-9\.]+)/],
+                        ["chrome", /CriOS\/([0-9\.]+)/],
+                        ["ie", /Trident\/.+rv:([0-9]+)/],
+                    ];
+                    for (i = 0; i < a.length; i++) {
+                        if (ua.match(a[i][1])) {
+                            o.browser = a[i][0];
+                            o.browserVersion = parseFloat(RegExp.$1);
+                            break;
+                        }
+                    }
+                    a = [
+                        [
+                            "ios",
+                            /([0-9_]+) like Mac OS X/,
+                            function (v) {
+                                return v.replace("_", ".").replace("_", "");
+                            },
+                        ],
+                        [
+                            "ios",
+                            /CPU like Mac OS X/,
+                            function (v) {
+                                return 0;
+                            },
+                        ],
+                        [
+                            "ios",
+                            /iPad; CPU/,
+                            function (v) {
+                                return 0;
+                            },
+                        ],
+                        ["android", /Android ([0-9\.]+)/, null],
+                        [
+                            "mac",
+                            /Macintosh.+Mac OS X ([0-9_]+)/,
+                            function (v) {
+                                return v.replace("_", ".").replace("_", "");
+                            },
+                        ],
+                        ["windows", /Windows NT ([0-9\.]+)/, null],
+                        ["undefined", /Undefined/, null],
+                    ];
+                    for (i = 0; i < a.length; i++) {
+                        if (ua.match(a[i][1])) {
+                            o.os = a[i][0];
+                            o.osVersion = parseFloat(a[i][2] ? a[i][2](RegExp.$1) : RegExp.$1);
+                            break;
+                        }
+                    }
+                    if (
+                        o.os == "mac" &&
+                        "ontouchstart" in window &&
+                        ((screen.width == 1024 && screen.height == 1366) || (screen.width == 834 && screen.height == 1112) || (screen.width == 810 && screen.height == 1080) || (screen.width == 768 && screen.height == 1024))
+                    )
+                        o.os = "ios";
+                    o.mobile = o.os == "android" || o.os == "ios";
+                    var _canUse = document.createElement("div");
+                    o.canUse = function (property, value) {
+                        var style;
+                        style = _canUse.style;
+                        if (!(property in style)) return false;
+                        if (typeof value !== "undefined") {
+                            style[property] = value;
+                            if (style[property] == "") return false;
+                        }
+                        return true;
+                    };
+                    o.flags.lsdUnits = o.canUse("width", "100dvw");
+                    return o;
+                })(),
+                trigger = function (t) {
+                    dispatchEvent(new Event(t));
+                },
+                cssRules = function (selectorText) {
+                    var ss = document.styleSheets,
+                        a = [],
+                        f = function (s) {
+                            var r = s.cssRules,
+                                i;
+                            for (i = 0; i < r.length; i++) {
+                                if (r[i] instanceof CSSMediaRule && matchMedia(r[i].conditionText).matches) f(r[i]);
+                                else if (r[i] instanceof CSSStyleRule && r[i].selectorText == selectorText) a.push(r[i]);
+                            }
+                        },
+                        x,
+                        i;
+                    for (i = 0; i < ss.length; i++) f(ss[i]);
+                    return a;
+                },
+                thisHash = function () {
+                    var h = location.hash ? location.hash.substring(1) : null,
+                        a;
+                    if (!h) return null;
+                    if (h.match(/\?/)) {
+                        a = h.split("?");
+                        h = a[0];
+                        history.replaceState(undefined, undefined, "#" + h);
+                        window.location.search = a[1];
+                    }
+                    if (h.length > 0 && !h.match(/^[a-zA-Z]/)) h = "x" + h;
+                    if (typeof h == "string") h = h.toLowerCase();
+                    return h;
+                },
+                scrollToElement = function (e, style, duration) {
+                    var y, cy, dy, start, easing, offset, f;
+                    if (!e) y = 0;
+                    else {
+                        offset = (e.dataset.scrollOffset ? parseInt(e.dataset.scrollOffset) : 0) * parseFloat(getComputedStyle(document.documentElement).fontSize);
+                        switch (e.dataset.scrollBehavior ? e.dataset.scrollBehavior : "default") {
+                            case "default":
+                            default:
+                                y = e.offsetTop + offset;
+                                break;
+                            case "center":
+                                if (e.offsetHeight < window.innerHeight) y = e.offsetTop - (window.innerHeight - e.offsetHeight) / 2 + offset;
+                                else y = e.offsetTop - offset;
+                                break;
+                            case "previous":
+                                if (e.previousElementSibling) y = e.previousElementSibling.offsetTop + e.previousElementSibling.offsetHeight + offset;
+                                else y = e.offsetTop + offset;
+                                break;
+                        }
+                    }
+                    if (!style) style = "smooth";
+                    if (!duration) duration = 750;
+                    if (style == "instant") {
+                        window.scrollTo(0, y);
+                        return;
+                    }
+                    start = Date.now();
+                    cy = window.scrollY;
+                    dy = y - cy;
+                    switch (style) {
+                        case "linear":
+                            easing = function (t) {
+                                return t;
+                            };
+                            break;
+                        case "smooth":
+                            easing = function (t) {
+                                return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+                            };
+                            break;
+                    }
+                    f = function () {
+                        var t = Date.now() - start;
+                        if (t >= duration) window.scroll(0, y);
+                        else {
+                            window.scroll(0, cy + dy * easing(t / duration));
+                            requestAnimationFrame(f);
+                        }
+                    };
+                    f();
+                },
+                scrollToTop = function () {
+                    scrollToElement(null);
+                },
+                loadElements = function (parent) {
+                    var a, e, x, i;
+                    a = parent.querySelectorAll('iframe[data-src]:not([data-src=""])');
+                    for (i = 0; i < a.length; i++) {
+                        a[i].src = a[i].dataset.src;
+                        a[i].dataset.src = "";
+                    }
+                    a = parent.querySelectorAll("video[autoplay]");
+                    for (i = 0; i < a.length; i++) {
+                        if (a[i].paused) a[i].play();
+                    }
+                    e = parent.querySelector('[data-autofocus="1"]');
+                    x = e ? e.tagName : null;
+                    switch (x) {
+                        case "FORM":
+                            e = e.querySelector(".field input, .field select, .field textarea");
+                            if (e) e.focus();
+                            break;
+                        default:
+                            break;
+                    }
+                },
+                unloadElements = function (parent) {
+                    var a, e, x, i;
+                    a = parent.querySelectorAll('iframe[data-src=""]');
+                    for (i = 0; i < a.length; i++) {
+                        if (a[i].dataset.srcUnload === "0") continue;
+                        a[i].dataset.src = a[i].src;
+                        a[i].src = "";
+                    }
+                    a = parent.querySelectorAll("video");
+                    for (i = 0; i < a.length; i++) {
+                        if (!a[i].paused) a[i].pause();
+                    }
+                    e = $(":focus");
+                    if (e) e.blur();
+                };
+            window._scrollToTop = scrollToTop;
+            var thisURL = function () {
+                return window.location.href.replace(window.location.search, "").replace(/#$/, "");
+            };
+            var getVar = function (name) {
+                var a = window.location.search.substring(1).split("&"),
+                    b,
+                    k;
+                for (k in a) {
+                    b = a[k].split("=");
+                    if (b[0] == name) return b[1];
+                }
+                return null;
+            };
+            var errors = {
+                handle: function (handler) {
+                    window.onerror = function (message, url, line, column, error) {
+                        handler(error.message);
+                        return true;
+                    };
+                },
+                unhandle: function () {
+                    window.onerror = null;
+                },
+            };
+            loadElements(document.body);
+            var style, sheet, rule;
+            style = document.createElement("style");
+            style.appendChild(document.createTextNode(""));
+            document.head.appendChild(style);
+            sheet = style.sheet;
+            if (client.mobile) {
+                (function () {
+                    if (client.flags.lsdUnits) {
+                        document.documentElement.style.setProperty("--viewport-height", "100dvh");
+                        document.documentElement.style.setProperty("--background-height", "100lvh");
+                    } else {
+                        var f = function () {
+                            document.documentElement.style.setProperty("--viewport-height", window.innerHeight + "px");
+                            document.documentElement.style.setProperty("--background-height", window.innerHeight + 250 + "px");
+                        };
+                        on("load", f);
+                        on("resize", f);
+                        on("orientationchange", function () {
+                            setTimeout(function () {
+                                f();
+                            }, 100);
+                        });
+                    }
+                })();
+            }
+            if (client.os == "android") {
+                (function () {
+                    sheet.insertRule("body::after { }", 0);
+                    rule = sheet.cssRules[0];
+                    var f = function () {
+                        rule.style.cssText = "height: " + Math.max(screen.width, screen.height) + "px";
+                    };
+                    on("load", f);
+                    on("orientationchange", f);
+                    on("touchmove", f);
+                })();
+                $body.classList.add("is-touch");
+            } else if (client.os == "ios") {
+                if (client.osVersion <= 11)
+                    (function () {
+                        sheet.insertRule("body::after { }", 0);
+                        rule = sheet.cssRules[0];
+                        rule.style.cssText = "-webkit-transform: scale(1.0)";
+                    })();
+                if (client.osVersion <= 11)
+                    (function () {
+                        sheet.insertRule("body.ios-focus-fix::before { }", 0);
+                        rule = sheet.cssRules[0];
+                        rule.style.cssText = "height: calc(100% + 60px)";
+                        on(
+                            "focus",
+                            function (event) {
+                                $body.classList.add("ios-focus-fix");
+                            },
+                            true
+                        );
+                        on(
+                            "blur",
+                            function (event) {
+                                $body.classList.remove("ios-focus-fix");
+                            },
+                            true
+                        );
+                    })();
+                $body.classList.add("is-touch");
+            }
+        })();
+        window.smoothScroll = function (target) {
+            var scrollContainer = target;
+            do { //find scroll container
+                scrollContainer = scrollContainer.parentNode;
+                if (!scrollContainer) return;
+                scrollContainer.scrollTop += 1;
+            } while (scrollContainer.scrollTop == 0);
+
+            var targetY = 0;
+            do { //find the top of target relatively to the container
+                if (target == scrollContainer) break;
+                targetY += target.offsetTop;
+            } while (target = target.offsetParent);
+
+            scroll = function (c, a, b, i) {
+                i++; if (i > 30) return;
+                c.scrollTop = a + (b - a) / 30 * i;
+                setTimeout(function () { scroll(c, a, b, i); }, 20);
+            }
+            // start scrolling
+            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+        }
+    </script>
+
 </body>
 
 </html>
